@@ -7,6 +7,7 @@ export default function App() {
   useEffect(() => {
     console.log('one more change');
     console.log('two more change');
+    console.log('final more change');
     fetch("https://my-json-server.typicode.com/puneetvashisht/demo-1/courses/1")
       .then((res) => res.json())
       .then((data) => setPost(data));
