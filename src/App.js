@@ -5,6 +5,7 @@ export default function App() {
   const [post, setPost] = useState("");
 
   useEffect(() => {
+    console.log('one more change');
     fetch("https://my-json-server.typicode.com/puneetvashisht/demo-1/courses/1")
       .then((res) => res.json())
       .then((data) => setPost(data));
